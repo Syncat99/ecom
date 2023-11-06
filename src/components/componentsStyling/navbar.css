@@ -2,7 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 5px 25px;
+    padding: 10px 25px;
+}
+.navbar > * {
+    font-size: 1.5rem;
 }
 .logo {
     display: flex;
@@ -10,37 +13,37 @@
     align-items: center;
 }
 .search {
+    overflow: hidden;
     align-items: center;
-    border: 1px solid rgb(114, 114, 114);
+    background-color: rgb(245, 245, 245);
     display: flex;
     border-radius: 10px;
     width: 50%;
     align-self: center;
-}
-/* .search input[type=text]::before {
-    content: "";
-    color: black;
-    left: 50px;
-    height: 10px;
-    width: 5px;
-    border: 1px solid black;
-    background-color: black;
+    min-width: 200px;
+    margin: 0 25px;
+    padding: 0 0 0 5px;
 
-} */
+}
+
 option {
     padding: 0 50px;
 }
-.search input:nth-child(1) {
+/* .search input:nth-child(1) {
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
 }
-.logo * {
-    margin: 0 5px;
-}
-input[type=text] {
-    width: 100%;
+.search img:nth-child(3) {
     border-top-right-radius: inherit;
     border-bottom-right-radius: inherit;
+} */
+.logo img:nth-child(1) {
+    margin: 0 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    
 }
 .search * {
     outline: none;
@@ -48,6 +51,91 @@ input[type=text] {
     border: none;
     padding: 10px;
 }
-.right-side * {
-    margin: 0 15px;
+.right-side > img {
+    margin: 0 10px;
+}
+.search-btn:hover {
+    cursor: pointer;
+    background-color: rgb(231, 150, 0);
+}
+.right-side {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.right-side img {
+    cursor: pointer;
+}
+.userName {
+    font-size: 0.9em;
+}
+.subscription {
+    font-size: 0.8em
+}
+.user {
+    position: relative;
+}
+.profilePhoto {
+    margin-right: 20px;
+}
+.userData {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid rgb(229, 229, 229);
+    background-color: white;
+    font-size: 0.8em;
+    padding: 5px 25px;
+    width:max-content;
+    position: absolute;
+    right: -10px;
+    top: 50px;
+    z-index: 1;
+}
+.userData > div {
+    margin: 20px 0;
+}
+.wallet div {
+    display: flex;
+    justify-content: space-between;
+}
+.wallet img {
+    cursor: default;
+}
+.personalInfo {
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.textInfos > *{
+    margin: 5px 0;
+}
+.menu > div {
+    display: flex;
+}
+hr {
+    border: none;
+    background-color: rgb(196, 196, 196);
+    height: 1px;
+}
+.navbar span {
+    color: rgb(131, 131, 131);
+}
+.navbar .icon {
+    margin-right: 10px;
+}
+
+.section > * {
+    margin: 10px 0;
+    
+}
+.logoutSection {
+    display: flex;
+}
+a {
+    text-decoration: none;
+    color: initial;
+}
+a:hover {
+    color:rgb(130, 130, 130)
 }
