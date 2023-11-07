@@ -5,7 +5,7 @@ const productslist = [
     {
         image: "/images/products/spy-tshirt.png",
         name: "Spy x Family Tshirt",
-        sexe: "women",
+        sex: "women",
         price: 26,
         seller: "North Purwokerto",
         soldUnits: 1289,
@@ -13,7 +13,7 @@ const productslist = [
     {
         image: "/images/products/oversized-tshirt.png",
         name: "Oversized Tshirt",
-        sexe: "women",
+        sex: "women",
         price: 48,
         seller: "North Purwokerto",
         soldUnits: 989,
@@ -21,7 +21,7 @@ const productslist = [
     {
         image: "/images/products/iphone14pro-max.png",
         name: "Iphone 14 Pro Max",
-        sexe: "",
+        sex: "",
         price: 1200,
         seller: "North Purwokerto",
         soldUnits: 520,
@@ -29,7 +29,7 @@ const productslist = [
     {
         image: "/images/products/greenman-jacket.png",
         name: "Brown Woman Hoodie",
-        sexe: "women",
+        sex: "women",
         price: 49,
         seller: "North Purwokerto",
         soldUnits: 389,
