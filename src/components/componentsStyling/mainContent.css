@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     background-color: #F7F7F7;
-    max-height: min-content;
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -22,11 +21,10 @@
     margin: 20px 0;
 }
 
-button {
+.trending-now button {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    border: none;
     outline: none;
     padding: 10px 50px;
     border-radius: 10px;

@@ -123,6 +123,8 @@ hr {
 }
 .navbar .icon {
     margin-right: 10px;
+    object-fit: contain;
+
 }
 
 .section > * {
