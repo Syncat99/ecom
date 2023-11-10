@@ -1,3 +1,4 @@
+import './componentsStyling/featuredCategory.css'
 import Category from "../components/category"
 
 const FeaturedCategory = () => {
@@ -37,6 +38,12 @@ const FeaturedCategory = () => {
             img: "/images/categoriesIcons/fashion.png",
             number: 4190,
 
+        },
+        {
+            title: "Hobbies",
+            img: "/images/categoriesIcons/hobbies.png",
+            number: 4190,
+
         }
     ]
     const categoriesList = categoriesData.map((category) => {
@@ -45,7 +52,13 @@ const FeaturedCategory = () => {
         )
     })
     return (
-        <div className="featuredCategories">{categoriesList}</div>
+        <div className="featuredCategories">
+            <div className="details">
+                <h1>Featured Categories</h1>
+                <a href="#"><button className='featuredCategories-btn'>Details</button></a>
+            </div>
+            <div className="CategoriesList">{categoriesList}</div>
+        </div>
     )
 }
 

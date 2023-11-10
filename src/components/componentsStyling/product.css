@@ -3,9 +3,10 @@
 .product {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: min-content;
     margin: 5px;
     font-family: 'typo grotesk';
+    border: 1px solid rgb(255, 255, 255);
 }
 .product > * {
     margin: 10px 0;
@@ -21,7 +22,7 @@
 .product .name-and-price {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     font-size: 0.9em;
 }
 .product .name {
@@ -39,8 +40,13 @@
     font-size: 1em;
 }
 .product img {
+    transition: ease-in-out 0.1s;
     width: 300px;
     padding: 15px 5px;
     border-radius: 5px;
     background-color: #F6F6F6;
+}
+.product:hover img {
+    border: 1px solid rgb(0, 0, 0);
+    scale: 1.05;
 }

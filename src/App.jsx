@@ -11,8 +11,9 @@ function App() {
     <>
       <Navbar/>
       <Main/>
-      {/* <PopularProducts/> */}
       <FeaturedCategory/>
+      <PopularProducts/>
+
     </>
   )
 }

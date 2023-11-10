@@ -27,13 +27,61 @@ const productslist = [
         soldUnits: 520,
     },
     {
-        image: "/images/products/greenman-jacket.png",
-        name: "Brown Woman Hoodie",
+        image: "/images/products/logitech-prox.png",
+        name: "Logitech Pro X Superlight",
         sex: "women",
         price: 49,
         seller: "North Purwokerto",
         soldUnits: 389,
     },
+    {
+        image: "/images/products/logitech-g735.png",
+        name: "Logitech G735 Gaming Headset",
+        sex: "women",
+        price: 49,
+        seller: "North Purwokerto",
+        soldUnits: 389,
+    },
+    {
+        image: "/images/products/logitech-g535.png",
+        name: "G535 Lightspeed Wireless Gaming Headset",
+        sex: "women",
+        price: 49,
+        seller: "North Purwokerto",
+        soldUnits: 389,
+    },
+    {
+        image: "/images/products/logitech-g502hero.png",
+        name: "Logitech Gaming Mouse G502 Hero",
+        sex: "",
+        price: 49,
+        seller: "North Purwokerto",
+        soldUnits: 389,
+    },
+    {
+        image: "/images/products/ipadprogen3.png",
+        name: "Ipad Pro Gen 3",
+        sex: "",
+        price: 49,
+        seller: "North Purwokerto",
+        soldUnits: 389,
+    },
+    {
+        image: "/images/products/djimini3pro.png",
+        name: "DJI Mini 3 Pro",
+        sex: "",
+        price: 49,
+        seller: "North Purwokerto",
+        soldUnits: 389,
+    },
+    {
+        image: "/images/products/airpodsmax.png",
+        name: "Airpods Max 2022",
+        sex: "",
+        price: 49,
+        seller: "North Purwokerto",
+        soldUnits: 389,
+    }
     
 ]
 const list = productslist.map((product, index) => {
