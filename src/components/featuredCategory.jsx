@@ -5,43 +5,43 @@ const FeaturedCategory = () => {
     const categoriesData = [
         {
             title: "Electronics",
-            img: "./public/images/categoriesIcons/electronics.png",
+            img: "./images/categoriesIcons/electronics.png",
             number: 4190,
 
         },
         {
             title: "Action Figure",
-            img: "./public/images/categoriesIcons/actionFigure.png",
+            img: "./images/categoriesIcons/actionFigure.png",
             number: 4190,
 
         },
         {
             title: "Books",
-            img: "./public/images/categoriesIcons/books.png",
+            img: "./images/categoriesIcons/books.png",
             number: 4190,
 
         },
         {
             title: "Gaming",
-            img: "./public/images/categoriesIcons/gaming.png",
+            img: "./images/categoriesIcons/gaming.png",
             number: 4190,
 
         },
         {
             title: "Music",
-            img: "./public/images/categoriesIcons/headphone.png",
+            img: "./images/categoriesIcons/headphone.png",
             number: 4190,
 
         },
         {
             title: "Fashion",
-            img: "./public/images/categoriesIcons/fashion.png",
+            img: "./images/categoriesIcons/fashion.png",
             number: 4190,
 
         },
         {
             title: "Hobbies",
-            img: "./public/images/categoriesIcons/hobbies.png",
+            img: "./images/categoriesIcons/hobbies.png",
             number: 4190,
 
         }
