@@ -10,7 +10,7 @@ const Navbar = (props) => {
     return (
         <div className="navbar">
             <div className="logo">
-                <img src='/images/logo.png' width={50}/>
+                <img src='./public/images/logo.png' width={50}/>
                 {props.windowWidth > 768 && <h1>Syncat</h1>}
             </div>
             <div className="search">
@@ -20,12 +20,12 @@ const Navbar = (props) => {
                     <option value="clothes">Clothes</option>
                 </select>
                 <input type="text" value="" placeholder="Search for a product"/>
-                <img className="search-btn" src="/images/search.png" width={15}/>
+                <img className="search-btn" src="./public/images/search.png" width={15}/>
             </div>
             <div className="right-side">
-                <img className="icon" src='/images/cart.png' width={50}/>
+                <img className="icon" src='./public/images/cart.png' width={50}/>
                 <div className="user">
-                    <img className="userIcon icon" src='/images/user.png' width={40} onClick={() => setShowUser(!showUser)} />
+                    <img className="userIcon icon" src='./public/images/user.png' width={40} onClick={() => setShowUser(!showUser)} />
                     {showUser && <UserInfo/>}
                 </div>
                 

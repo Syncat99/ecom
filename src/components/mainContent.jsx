@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './componentsStyling/mainContent.css'
 
 const Main = (props) => {
-    const images = ["/images/image4.png", "/images/image5.jpg"]
+    const images = ["./public/images/image4.png", "./public/images/image5.jpg"]
     const [i, setI] = useState(0)
     const changeImage = () => {
         if (i === 0) {
@@ -25,7 +25,7 @@ const Main = (props) => {
                 </div>
             </div>
             {props.windowWidth < 768 && <img className="main-image" src={`${images[i]}`}/>}
-            {props.windowWidth > 600 && <img onClick={() => {changeImage()}} className="next-btn btn" src="/images/next-btn.png" width={200}/>}
+            {props.windowWidth > 600 && <img onClick={() => {changeImage()}} className="next-btn btn" src="./public/images/next-btn.png" width={200}/>}
         </div>
     )
 }
