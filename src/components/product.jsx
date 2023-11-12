@@ -1,7 +1,6 @@
 import "./componentsStyling/product.css"
 
 const ProductBanner = ({data}) => {
-    console.log(data)
     return (
         <div className="product">
             <img src={`${data.image}`}/>

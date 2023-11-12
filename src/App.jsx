@@ -12,8 +12,6 @@ function App() {
        function handleResize() {
         setWindowWidth(window.innerWidth)
        }
-       console.log(windowWidth)
-
         window.addEventListener('resize', handleResize)
     }, [windowWidth])
   return (
