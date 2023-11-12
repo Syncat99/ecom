@@ -1,0 +1,89 @@
+.sponsored {
+    display: flex;
+    align-items: center;
+    background-color: #FCECE1;
+    justify-content: flex-end;
+    margin: 25px 0;
+    padding: 80px;
+    border-radius: 10px;
+}
+.SponsoredDetails {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: start;
+    width: 50%;
+    word-break: break-all;
+    position: relative;
+
+}
+.SponsoredDetails h1 {
+    font-size: 3vw;
+}
+.SponsoredDetails p {
+    font-size: 1.2vw;
+    line-height: 1.5;
+    color: #818B9C;
+}
+.SponsoredDetails img {
+    left: -100%;
+    position: absolute;
+    top: -45%;
+    z-index: 0;
+    width: 20vw;
+}
+.SponsoredButtons {
+    display: flex;
+}
+.SponsoredDetails button {
+    padding: 15px 0;
+    border-radius: 10px;
+    font-size: 1vw;
+    background-color: inherit;
+    width: 50%;
+}
+.SponsoredDetails .buy-btn {
+    background-color: #1E4C2F;
+}
+.SponsoredDetails .buy-btn:hover {
+    background-color: inherit;
+}
+@media screen and (max-width: 768px) {
+    .sponsored {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        margin: 25px 50px;
+    }
+    .SponsoredDetails {
+        position: unset;
+        width: inherit;
+        width: 100%;
+        font-size: 1.5em;
+        justify-content: flex-start;
+    }
+    .SponsoredDetails h1 {
+        font-size: 5vw;
+    }
+    .SponsoredDetails p {
+        font-size: 3vw;
+        line-height: 1.5;
+        color: #818B9C;
+    }
+    .SponsoredDetails img {
+        position: initial;
+        top: -40%;
+        z-index: 0;
+        width: 25vw;
+    }
+    .SponsoredDetails button {
+        width: 45%;
+        font-size: 3vw;
+    }
+    .SponsoredButtons {
+        justify-content: space-evenly;
+        font-size: 3vw;
+    }
+}

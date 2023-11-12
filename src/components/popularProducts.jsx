@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import './componentsStyling/popularProducts.css'
 import ProductBanner from "./product";
 const productslist = [
@@ -84,18 +84,29 @@ const productslist = [
     }
     
 ]
-const list = productslist.map((product, index) => {
-    return (
-        <ProductBanner key={index} data={product}/>
-    )
-})
-console.log(list)
+
+
+
 const PopularProducts = () => {
+    const [itemsToLoad, setItemsToLoad] = useState(4);
+    const moreItems = () => {
+        setItemsToLoad((currentValue) => {
+            return currentValue+4;
+        })
+    }
+    const list = productslist.map((product, index) => {
+        if (index < itemsToLoad) {
+            return (
+                <ProductBanner key={index} data={product}/>
+            )
+        }
+    })
     return (
         <div className="popularProducts">
             <h1>Popular Products</h1>
             <p>Lorem ipsum dolor sit amet consectetur. Integer cursus cursus in</p>
             <div className="productsList">{list}</div>
+            <button className="loadMore-btn" onClick={moreItems}>Load More</button>
         </div>
     )
 }

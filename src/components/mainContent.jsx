@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import './componentsStyling/mainContent.css'
 
-const Main = () => {
+const Main = (props) => {
     const images = ["/images/image4.png", "/images/image5.jpg"]
-    const [i, setI] = useState(1)
+    const [i, setI] = useState(0)
     const changeImage = () => {
         if (i === 0) {
             setI(1);
@@ -24,7 +24,8 @@ const Main = () => {
                     <button className="detail-btn">View Detail</button>
                 </div>
             </div>
-            <img onClick={() => {changeImage()}} className="next-btn btn" src="/images/next-btn.png" width={200}/>
+            {props.windowWidth < 768 && <img className="main-image" src={`${images[i]}`}/>}
+            {props.windowWidth > 600 && <img onClick={() => {changeImage()}} className="next-btn btn" src="/images/next-btn.png" width={200}/>}
         </div>
     )
 }

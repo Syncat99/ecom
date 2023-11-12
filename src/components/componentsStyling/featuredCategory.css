@@ -57,3 +57,8 @@
     border: 2px solid white;
     border-radius: 10px;
 }
+@media screen and (max-width: 700px) {
+    .featuredCategories {
+        font-size: 3vw;
+    }
+}

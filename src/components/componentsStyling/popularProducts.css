@@ -4,6 +4,7 @@
     align-items: center;
     margin: 50px 0;
     font-size: 1.2em;
+    
 }
 .popularProducts > * {
     margin: 10px 0;
@@ -14,10 +15,22 @@
 .productsList {
     display: flex;
     flex-wrap: wrap;
-
+    gap: 10px;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: safe center;
+    
 }
 .productsList h3 {
     overflow-wrap: break-word;
+}
+.loadMore-btn {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    padding: 10px 25px;
+    border: 1px solid #1E4C2F;
+    border-radius: 10px;
+}
+.loadMore-btn:hover {
+    text-decoration: underline;
 }

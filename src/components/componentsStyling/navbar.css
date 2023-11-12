@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 10px 25px;
+    padding: 10px 30px;
 }
 .navbar > * {
     font-size: 1.5rem;
@@ -14,7 +14,6 @@
 }
 .search {
     overflow: hidden;
-    align-items: center;
     background-color: rgb(245, 245, 245);
     display: flex;
     border-radius: 10px;
@@ -37,8 +36,8 @@ option {
     border-top-right-radius: inherit;
     border-bottom-right-radius: inherit;
 } */
-.logo img:nth-child(1) {
-    margin: 0 20px;
+.logo img {
+    margin: 0 10px;
 }
 
 input[type=text] {
@@ -54,6 +53,9 @@ input[type=text] {
 .right-side > img {
     margin: 0 10px;
 }
+.search-btn {
+    object-fit: contain;
+}
 .search-btn:hover {
     cursor: pointer;
     background-color: rgb(231, 150, 0);
@@ -61,6 +63,7 @@ input[type=text] {
 .right-side {
     align-items: center;
     display: flex;
+    justify-content: center;
     flex-wrap: nowrap;
 }
 .right-side img {
@@ -121,15 +124,13 @@ hr {
 .navbar span {
     color: rgb(131, 131, 131);
 }
-.navbar .icon {
-    margin-right: 10px;
-    object-fit: contain;
-
-}
 
 .section > * {
     margin: 10px 0;
     
+}
+.user .icon {
+    padding-right: 5px;
 }
 .logoutSection {
     display: flex;
@@ -140,4 +141,27 @@ a {
 }
 a:hover {
     color:rgb(130, 130, 130)
+}
+@media screen and (max-width: 700px) {
+
+    .navbar {
+    }
+    .right-side > img {
+        margin: 0;
+    }
+    .navbar * {
+        margin: 0;
+    }
+
+    .icon {
+        padding: 0;
+        margin: 0;
+    }
+    .logo {
+        margin: 0;
+    }
+    .icon {
+        scale: 0.7;
+    }
+
 }

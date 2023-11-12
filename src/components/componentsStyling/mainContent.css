@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: none;
     background-color: #F7F7F7;
     background-repeat: no-repeat;
     background-position: right;
@@ -14,7 +15,7 @@
     padding: 5%;
 }
 .trending-now .details p {
-    width: 50%;
+    width: 75%;
     font-size: 1.2vw;
     line-height: 1.5;
     color: rgb(100, 100, 100);
@@ -40,23 +41,23 @@
 .buy-btn {
     margin-right: 15px;
     color: white;
-    background-color: rgb(0, 64, 0);
-    border: 1px solid rgb(0, 64, 0);
+    background-color: #1E4C2F;
+    border: 1px solid #1E4C2F;
 
 }
 .buy-btn:hover {
-    border: 1px solid rgb(0, 64, 0);
+    border: 1px solid #1E4C2F;
     background-color: inherit;
-    color: rgb(0, 64, 0);
+    color: #1E4C2F;
 }
 .detail-btn {
     background-color: #f7f7f7c9;
-    border: 1px solid rgb(0, 64, 0);
-    color: rgb(0, 64, 0);
+    border: 1px solid #1E4C2F;
+    color: #1E4C2F;
 }
 .detail-btn:hover {
     color:white;
-    background-color: rgb(0, 64, 0);
+    background-color: #1E4C2F;
 }
 .next-btn {
     transition:ease-in-out 0.5s;
@@ -68,22 +69,40 @@
     left: 50px;
 }
 @media screen and (max-width: 700px) {
+    .trending-now .details {
+        padding: 20px 0;
+        width: 90%;
+        align-items: flex-start;
+    }
+    .main-image {
+        width: 100%;
+    }
     .trending-now {
-        margin: 0 auto;
-      flex-direction: column;
-      background-position: bottom;
-      align-items: center;
+        flex-direction: column;
+        background-position: bottom;
+        justify-content: flex-start;
+        background-size: 0;
+        align-items: center;
+        margin-bottom: 10px;
     }
     .trending-now h1 {
-        font-size: 10vw;
+        font-size: 8vw;
     }
     .trending-now .details p {
-        font-size: 3vw;
+        width: 100%;
+        font-size: 5vw;
     }
     .trending-now .buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .trending-now .details {
+        display: flex;
+        justify-content: space-between;
         flex-direction: column;
     }
-    button {
-        padding: 10px 20px;
+    .buy-btn {
+        margin-right: 0;
     }
   }
