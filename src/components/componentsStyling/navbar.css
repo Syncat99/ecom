@@ -51,7 +51,6 @@ input[type=text] {
     padding: 10px;
 }
 .right-side > img {
-    margin: 0 10px;
 }
 .search-btn {
     object-fit: contain;
@@ -76,6 +75,7 @@ input[type=text] {
     font-size: 0.8em
 }
 .user {
+    margin-left: 10px;
     position: relative;
 }
 .profilePhoto {

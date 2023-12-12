@@ -1,0 +1,47 @@
+.articles-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.article-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* font-size: 0.8em; */
+    width: min-content;
+}
+.article-item h4 {
+    color: #1E4C2F;
+} 
+.articles-top {
+    font-family: 'typo grotesk';
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 25px;
+}
+.articles h2 {
+    font-size: 1.2vw;
+}
+.articles p {
+    font-size: 1vw;
+}
+
+.articles-top button {
+    font-size: 1vw;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    padding: 10px 25px;
+    border: 1px solid #1E4C2F;
+    border-radius: 10px;
+}
+.articles-top button:hover {
+    text-decoration: underline;
+}
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 50px 0;
+}

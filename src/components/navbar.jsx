@@ -24,6 +24,7 @@ const Navbar = (props) => {
             </div>
             <div className="right-side">
                 <img className="icon" src='./images/cart.png' width={50}/>
+                <img className="icon" src='./images/notifications.png' width={25}/>
                 <div className="user">
                     <img className="userIcon icon" src='./images/user.png' width={40} onClick={() => setShowUser(!showUser)} />
                     {showUser && <UserInfo/>}

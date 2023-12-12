@@ -5,6 +5,7 @@ import Main from './components/mainContent'
 import PopularProducts from './components/popularProducts'
 import FeaturedCategory from './components/featuredCategory'
 import SponsoredProduct from './components/sponsoredProduct'
+import Article from './components/articles'
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     
@@ -21,6 +22,7 @@ function App() {
       <FeaturedCategory windowWidth={windowWidth}/>
       <PopularProducts windowWidth={windowWidth}/>
       <SponsoredProduct />
+      <Article />
     </div>
   )
 }
