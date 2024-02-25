@@ -3,7 +3,7 @@
     align-items: center;
     background-color: #FCECE1;
     justify-content: flex-end;
-    margin: 25px 0;
+    margin: 25px 15%;
     padding: 80px;
     border-radius: 10px;
 }
@@ -33,6 +33,7 @@
     top: -45%;
     z-index: 0;
     width: 20vw;
+    transition: 0.1s ease-in-out;
 }
 .SponsoredButtons {
     display: flex;
@@ -85,5 +86,19 @@
     .SponsoredButtons {
         justify-content: space-evenly;
         font-size: 3vw;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .SponsoredDetails img {
+        scale: 0.8;
+        top: -50%;
+
+    }
+}
+@media screen and (min-width: 2800px) {
+    .SponsoredDetails img {
+        scale: 0.7;
+        top: -80%;
+
     }
 }

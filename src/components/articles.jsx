@@ -30,9 +30,11 @@ function Article() {
                 return (
                     <div className="article-item" key={article.id}>
                         <img src={article.image} width={400}/>
-                        <h4>{article.date}</h4>
-                        <h2>{article.title}</h2>
-                        <p>{article.content}</p>
+                        <div className="item-details">
+                            <h4>{article.date}</h4>
+                            <h2>{article.title}</h2>
+                            <p>{article.content}</p>
+                        </div>
                     </div>
                 )
             })

@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
-import './App.css'
+import './homepage.css'
 import Navbar from './components/navbar'
 import Main from './components/mainContent'
 import PopularProducts from './components/popularProducts'
 import FeaturedCategory from './components/featuredCategory'
 import SponsoredProduct from './components/sponsoredProduct'
 import Article from './components/articles'
-function App() {
+function Homepage() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     
     useEffect(() => {
@@ -27,4 +27,4 @@ function App() {
   )
 }
 
-export default App
+export default Homepage

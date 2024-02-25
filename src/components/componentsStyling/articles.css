@@ -1,38 +1,58 @@
 .articles-list {
     display: flex;
-    justify-content: space-around;
-    gap: 10px;
+    justify-content: center;
+    gap: 25px;
     flex-wrap: wrap;
+    width: inherit;
 }
 .article-item {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     /* font-size: 0.8em; */
-    width: min-content;
+    width: 30%;
+    padding: 0px 0px 30px 0px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(232,232,232,1) 0%, rgba(255,255,255,0) 56%);
+    transition: 0.2s ease-in-out;
+}
+.article-item img {
+    width: 100%;
 }
 .article-item h4 {
     color: #1E4C2F;
-} 
+}
+.article-item:hover {
+    box-shadow: 10px 10px 10px #e2e2e2;
+}
 .articles-top {
     font-family: 'typo grotesk';
     display: flex;
     justify-content: space-between;
-    padding: 25px 25px;
+    padding: 20px 25px;
+}
+.item-details {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.articles-top h1 {
+    font-size: 3.5vw;
 }
 .articles h2 {
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 .articles p {
     font-size: 1vw;
 }
 
 .articles-top button {
-    font-size: 1vw;
+    font-size: 1.5vw;
     border: none;
     outline: none;
     background-color: inherit;
-    padding: 10px 25px;
+    padding: 5px 35px;
     border: 1px solid #1E4C2F;
     border-radius: 10px;
 }
@@ -43,5 +63,21 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin: 50px 0;
+    margin: 50px 15%;
+}
+@media screen and (max-width: 700px) {
+    .articles-top button {
+        font-size: 2vw;
+        padding: 10px;
+    }
+    .article-item {
+        width: 100%;
+    }
+    .articles h2 {
+        font-size: 5vw;
+    }
+    .articles p {
+        font-size: 3vw;
+    }
+
 }

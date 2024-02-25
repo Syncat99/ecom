@@ -24,8 +24,8 @@ const Main = (props) => {
                     <button className="detail-btn">View Detail</button>
                 </div>
             </div>
-            {props.windowWidth < 768 && <img className="main-image" src={`${images[i]}`}/>}
-            {props.windowWidth > 600 && <img onClick={() => {changeImage()}} className="next-btn btn" src="./images/next-btn.png" width={200}/>}
+            {props.windowWidth <= 700 && <img className="main-image" src={`${images[i]}`}/>}
+            {props.windowWidth > 700 && <img onClick={() => {changeImage()}} className="next-btn btn" src="./images/next-btn.png" width={200}/>}
         </div>
     )
 }
